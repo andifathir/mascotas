@@ -17,13 +17,12 @@ class Pet {
     required String breed,
     required int age,
     String imageUrl = '',
-  }) : 
-    id = RxString(id ?? DateTime.now().millisecondsSinceEpoch.toString()),
-    name = RxString(name),
-    type = RxString(type),
-    breed = RxString(breed),
-    age = RxInt(age),
-    imageUrl = RxString(imageUrl);
+  })  : id = RxString(id ?? DateTime.now().millisecondsSinceEpoch.toString()),
+        name = RxString(name),
+        type = RxString(type),
+        breed = RxString(breed),
+        age = RxInt(age),
+        imageUrl = RxString(imageUrl);
 
   // Other methods (toJson, fromJson, copyWith) remain the same
 
